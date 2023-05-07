@@ -1,71 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My Responsive Website</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Website=</title>
   </head>
+
   <body>
-    <header>
-      <h1>My Website</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section>
-        <h2>Welcome to my website</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-          convallis metus eu tortor congue, in volutpat diam consequat. Aliquam
-          erat volutpat.
-        </p>
-      </section>
-
-      <section>
-        <h2>About Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-          convallis metus eu tortor congue, in volutpat diam consequat. Aliquam
-          erat volutpat.
-        </p>
-      </section>
-
-      <section>
-        <h2>Our Services</h2>
-        <ul>
-          <li>Service 1</li>
-          <li>Service 2</li>
-          <li>Service 3</li>
-          <li>Service 4</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Contact Us</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <input type="submit" value="Send" />
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2023 My Website</p>
-    </footer>
+    <section id="header">
+      <!-- header section -->
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1><span>G</span>iorgi <span>K</span>urtanidze</h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="hero">
+      <!-- resume section -->
+      <div class="hero container">
+        <div>
+          <h1>Hello,</h1>
+          <h1>My Name is</h1>
+          <h1>Giorgi</h1>
+          <h1 class="h1">Kurtanidze</h1>
+          <a href="./Giorgi-Kurtanidze-CV.pdf" type="button" class="cta"
+            >Download Resume</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <!-- about me section -->
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="./img/kurta.jpg" alt="img" />
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">About <span>me</span></h1>
+          <p>
+            Hi! I'm excited to share a little about myself with you. I was born
+            and raised in Sachkhere, but I moved to Tbilisi to attend Komarovi's
+            School. Currently, I live on the school's campus and spend my time
+            learning programming languages and participating in various school a
+            ctivities. I believe in using my time productively and pushing
+            myself to achieve my goals.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon">
+              <img src="https://img.icons8.com/bubbles/100/000000/phone.png" />
+            </div>
+            <div class="contact-info">
+              <h1>Phone</h1>
+              <h2>+995 598 255 354</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/new-post.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2>thinkers.struggle@gmail.com</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/map-marker.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Address</h1>
+              <h2>Sairkhe, Sachkhere, Imereti, Georgia, 4009</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>G</span>iorgi <span>K</span>urtanidze</h1>
+        </div>
+        <h2>Your Complete Web Solution</h2>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="https://www.facebook.com/gio.kurtanidze.357"
+              ><img src="./img/download__1_-removebg-preview.png"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a href="https://www.instagram.com/gio_kurttanidze/"
+              ><img src="./img/Instagram-Logo.png"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a href="https://github.com/kurta17"
+              ><img src="./img/download-removebg-preview.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
